@@ -67,6 +67,12 @@ p {
     padding: 6rem;
 }
 
+.slides {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
 .body {
     width: 50%;
 }
