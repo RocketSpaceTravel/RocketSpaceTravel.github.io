@@ -169,7 +169,7 @@ p {
     }
     #Card {
         border-radius: 1rem;
-        width: 100%;
+        width: 90%;
         height: 55%;
         background: rgb(85, 72, 129);
     } 
@@ -178,23 +178,22 @@ p {
         padding: 3rem;
         font-size: medium;
     }
-    
 }
 
 #Card {
     border-radius: 1rem;
-    width: 50%;
+    width: 90%;
     height: 55%;
     background: rgb(85, 72, 129);
 } 
 
-.desc {
+#desc {
     width: 65%;
     padding: 3rem;
     font-size: medium;
 }
 
-.card_title {
+#card_title {
     text-align: center;
     font-size: x-large;
 }
@@ -207,4 +206,9 @@ p {
 #cardcontainer {
     display: flex;
     justify-content: center;
+}
+
+.card_btn_holder {
+    display: flex;
+    flex-direction: row;
 }
