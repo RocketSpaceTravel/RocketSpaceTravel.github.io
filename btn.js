@@ -5,12 +5,32 @@ let crd_btn_lft = document.getElementById("Card_left")
 
 let array = [
     {
-        "Title": "One",
-        "Description": "This is the description"
+        "Title": "Venus",
+        "Description": "Explore one of the hottest planet in our solar system."
     },
     {
-        "Title": "Two",
+        "Title": "Earth",
         "Description": "This is the description part 2"
+    },
+    {
+        "Title": "Mars",
+        "Description": "Explore one of the hottest planet in our solar system."
+    },
+    {
+        "Title": "Jupiter",
+        "Description": "Explore one of the hottest planet in our solar system."
+    },
+    {
+        "Title": "Saturn",
+        "Description": "Explore one of the hottest planet in our solar system."
+    },
+    {
+        "Title": "Uranus",
+        "Description": "Explore one of the hottest planet in our solar system."
+    },
+    {
+        "Title": "Neptune",
+        "Description": "Explore one of the hottest planet in our solar system."
     }
 ]
 
@@ -27,7 +47,7 @@ crd_btn_rght.onclick = function(){
 
 crd_btn_lft.onclick = function(){
     counter -= 1
-    if (counter<=array.length){
+    if (counter<=0){
         counter = 0
     }
     crd_ttl.innerText=array[counter].Title
