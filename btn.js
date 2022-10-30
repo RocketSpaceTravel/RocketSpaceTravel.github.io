@@ -12,7 +12,7 @@ let array = [
     },
     {
         "Title": "Earth",
-        "Description": "This is the description part 2",
+        "Description": "Go around and adore the magnificient beauty of planet earth.",
         "src":"./Image/Planet3-removebg-preview.png"
     },
     {
