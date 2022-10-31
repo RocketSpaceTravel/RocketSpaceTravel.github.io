@@ -12,27 +12,27 @@ let array = [
     },
     {
         "Title": "Mars",
-        "Description": "Explore Mars. Most popularly known as the 'Red Planet'. Prices starting from $500,000",
+        "Description": "Explore Mars. The planet that looks like earth. Also known as the 'Red Planet'.",
         "src":"./Image/AltPhotos/simon-lee-hrOXaenH640-unsplash.jpg"
     },
     {
         "Title": "Jupiter",
-        "Description": "Go around the largest planet in the entire solar system. Prices starting around 1,000,000",
+        "Description": "Explore Jupiter. Go around the largest planet in the entire solar system.",
         "src":"./Image/AltPhotos/simon-lee-_B7LjqNXu5Q-unsplash.jpg"
     },
     {
         "Title": "Saturn",
-        "Description": "Explore one of the hottest planet in our solar system.",
+        "Description": "Explore Saturn, one of the lightest and the planet with the best rings. ",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg"
     },
     {
         "Title": "Uranus",
-        "Description": "Explore one of the hottest planet in our solar system.",
+        "Description": "Go around Uranus, the third largest planet, and the coldest planet.",
         "src":"./Image/AltPhotos/simon-lee-A6OTC1-Ok-A-unsplash.jpg"
     },
     {
         "Title": "Neptune",
-        "Description": "Explore one of the hottest planet in our solar system.",
+        "Description": "Explore Neptune, the farthest, and the planet that rains diamonds.",
         "src":"./Image/AltPhotos/simon-lee-MzZ4WW3IT_U-unsplash.jpg"
     }
 ]

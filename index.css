@@ -129,6 +129,8 @@ p {
 #card_title {
     text-align: center;
     font-size: x-large;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .card_btn_holder {
