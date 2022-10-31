@@ -6,39 +6,34 @@ let planetimg = document.getElementById("Img")
 
 let array = [
     {
-        "Title": "Venus",
-        "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet2-removebg-preview.png"
-    },
-    {
         "Title": "Earth",
-        "Description": "Go around and adore the magnificient beauty of planet earth.",
-        "src":"./Image/Planet3-removebg-preview.png"
+        "Description": "Go around and adore the magnificent beauty of planet earth.",
+        "src":"./Image/AltPhotos/simon-lee-eGALMCJ_Cvk-unsplash.jpg"
     },
     {
         "Title": "Mars",
-        "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet4-removebg-preview.png"
+        "Description": "Explore Mars. Most popularly known as the 'Red Planet'. Prices starting from $500,000",
+        "src":"./Image/AltPhotos/simon-lee-hrOXaenH640-unsplash.jpg"
     },
     {
         "Title": "Jupiter",
-        "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet5-removebg-preview.png"
+        "Description": "Go around the largest planet in the entire solar system. Prices starting around 1,000,000",
+        "src":"./Image/AltPhotos/simon-lee-_B7LjqNXu5Q-unsplash.jpg"
     },
     {
         "Title": "Saturn",
         "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet6-removebg-preview.png"
+        "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg"
     },
     {
         "Title": "Uranus",
         "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet7-removebg-preview.png"
+        "src":"./Image/AltPhotos/simon-lee-A6OTC1-Ok-A-unsplash.jpg"
     },
     {
         "Title": "Neptune",
         "Description": "Explore one of the hottest planet in our solar system.",
-        "src":"./Image/Planet8-removebg-preview.png"
+        "src":"./Image/AltPhotos/simon-lee-MzZ4WW3IT_U-unsplash.jpg"
     }
 ]
 

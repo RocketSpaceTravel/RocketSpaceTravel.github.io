@@ -113,8 +113,15 @@ p {
 
 } 
 
+#Img {
+    width: 50%;
+    height: 90%;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
 #desc {
-    width: 65%;
+    width: 100%;
     padding: 3rem;
     font-size: medium;
 }
