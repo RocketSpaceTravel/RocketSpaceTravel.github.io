@@ -163,7 +163,7 @@ p {
     } 
     .Rocketspace {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+        color: rgb(255, 106, 0);
         font-size: small;
         display: hidden;
     }
