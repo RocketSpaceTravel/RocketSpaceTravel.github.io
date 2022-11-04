@@ -2,6 +2,16 @@ html {
     scroll-behavior: smooth;
   }
 
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 #Twinkling_Stars {
     position: fixed;
     right: 0;
@@ -94,13 +104,13 @@ p {
 
 .title_img1 {
     display: flex; 
-    justify-content: end;
+    justify-content: center;
     display: none;
 }
 
 .title_img2 {
         display: flex; 
-        justify-content: end;
+        justify-content: center;
         display: block;
 }
 
@@ -152,6 +162,9 @@ p {
     width: 100%;
 }
 
+#container {
+    margin: 15px;
+}
 
 @media (max-width:1000px) {
     .links {
@@ -163,7 +176,6 @@ p {
     } 
     .Rocketspace {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(255, 106, 0);
         font-size: small;
         display: hidden;
     }
@@ -202,13 +214,13 @@ p {
 
     .title_img1 {
         display: flex; 
-        justify-content: end;
+        justify-content: center;
         display: block;
     }
 
     .title_img2 {
         display: flex; 
-        justify-content: end;
+        justify-content: center;
         display: none;
     }
 
@@ -244,5 +256,8 @@ p {
     }
     #Img {
         display: none;
+    }
+    #container {
+        margin: 0px;
     }
 }
