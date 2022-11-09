@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aos": "^2.3.4",
+    "daisyui": "^2.38.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

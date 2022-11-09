@@ -4,100 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocketSplash</title>
+    <title>RocketSpace</title>
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <!-- Video Background -->
-    <video loop autoplay muted id="Twinkling_Stars">
+    <video loop autoplay muted id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none">
         <source src="./image/Stars.mp4">
     </video>
-    <nav>
-        <h2 class="Rocketspace">RocketSpace</h2>
-        <div class="links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="credit.html">Credit</a>
+    <nav class=" w-screen h-12 bg-gray-600 bg-opacity-30 sticky text-white flex gap-x-36 text-lg pt-2 justify-center">
+        <p>RocketSpace</p>
+        <div class=" flex text-right gap-x-8">
+            <p>About</p>
+            <p>Credits</p>
+            <p>Pricing</p>
         </div>
     </nav>
-    <header>
-
-        <div style="width: 100%;">
-            <div class="title_img1" >
-                <img src="./image/Vector.svg">
-             </div>
-        <div>
-            <h1 id="Header"></h1>
-            <h3>Explore endless possibilities.</h3>
+    <!-- ______________________________________________________________ -->
+    <header class="text-white p-24 flex flex-row">
+        <div class="flex flex-col gap-11">
+        <div class=" flex flex-col gap-11">
+        <h1 class="text-3xl text-center md:text-left font-bold md:w-[30rem]" id="Header"></h1>
+        <h1 class="text-xl text-center md:text-left  font-semibold w-96">Explore endless possibilities.</h1>
         </div>
-        <div id="buttons">
-            <a href="#Startbody"><button style="width: 80px; height: 45px; background-color: rgb(63, 252, 195); border-radius: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; border: none;">About Us</button></a>
-            <button style="width: 80px; height: 45px; background-color: rgb(139, 139, 255); border-radius: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; border: none;">Pricing</button>
-        </div>   
-    </div> 
-    <div class="title_img2">
-        <img src="./image/Vector.svg">
-     </div>
+        <div class=" flex gap-x-4">
+            <button class=" w-20 h-10 rounded-lg bg-green-400 text-black font-semibold">About</button>
+            <button class=" w-20 h-10 rounded-lg bg-purple-400 text-black font-semibold">Pricing</button>
+        </div>
+        </div>
+        <div class=" flex justify-end w-screen">
+        <div class=" w-72 h-96 bg-white"></div>
+        </div>
     </header>
 
-            <div id="Startbody">
-
-            </div>
-    <div class="body1" data-aos="fade-in" data-aos="">
-        <div style="width: 100%;">
-        <div class="title_img1" >
-            <img src="./image/Vector.svg">
-         </div>
-            <div class="body" >
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi est iste tempore dolor alias a quibusdam earum repellendus commodi perspiciatis officiis molestiae, quo velit nobis sed asperiores dolore deleniti!</p>
-            </div>
-        </div>
-        <div class="title_img2">
-            <img src="./image/Vector.svg">
-        </div>
-    </div>
-
-                
-    <div class="body1" data-aos="fade-in" data-aos="">
-        <div style="width: 100%;">
-        <div class="title_img1" >
-            <img src="./image/Vector.svg">
-         </div>
-            <div class="body" >
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi est iste tempore dolor alias a quibusdam earum repellendus commodi perspiciatis officiis molestiae, quo velit nobis sed asperiores dolore deleniti!</p>
-            </div>
-        </div>
-        <div class="title_img2">
-            <img src="./Vector.svg">
-        </div>
-    </div>
-    <div class="body1" id="cardcontainer" data-aos="fade-in" data-aos="">
-        <div id="Card">
-            <div id="container" style="display: flex; flex-direction: row; justify-content: center;">
-                <div>
-                    <div class="card_body">
-                    <p id="card_title">Title</p>
-                    <p id="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, magnam ex. Nam optio odio, accusantium quis ex ea praesentium deserunt voluptatem facilis quasi quibusdam expedita iusto aut consectetur doloribus blanditiis.</p>
-                    </div>
-                    <div class="card_btn_holder">
-                    <button class="Card_btn" style="width: 80px; height: 45px; background-color: rgb(63, 252, 195); border-radius: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; border: none;">Click Me!</button>
-                    <div style="display: flex; flex-direction: row;">
-                        <button id="Card_left" style="width: 50px; height: 45px; background-color: transparent; border-radius: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; border: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: larger; color:white;"><</button>
-                        <button id="Card_right" style="width: 50px; height: 45px; background-color: transparent; border-radius: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif; border: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: larger; color:white;">></button>
-                    </div>
-                    </div>
-                </div>
-                <div style="position: relative; display: flex; justify-content: end; margin-right: 20px;">
-                <img src="./Image/AltPhotos/simon-lee-_B7LjqNXu5Q-unsplash.jpg" id="Img">
-                </div>
-                </div>
-        </div>
-        </div>
-    </div>
 </body>
 <script type="module" src="./src/scripts/typewriter.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
