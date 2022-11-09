@@ -27,10 +27,10 @@ html {
   }
   
 
-  button {
+  button:hover {
     cursor: url('../../carbon_rocket_click.png'),auto;
   }
 
-  a{
+  a:hover{
     cursor: url('../../carbon_rocket_click.png'),auto;
   }
