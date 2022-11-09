@@ -34,3 +34,8 @@ html {
   a:hover{
     cursor: url('../../carbon_rocket_click.png'),auto;
   }
+
+  #Images {
+    width: 50%;
+    height: 100%;
+  }
