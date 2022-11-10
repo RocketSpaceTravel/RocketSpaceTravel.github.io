@@ -51,10 +51,10 @@ crd_btn_rght.onclick = function(){
     if (counter>=array.length){
         counter = 0
     }
-    crd_ttl.innerText=array[counter].Title
+    // crd_ttl.innerText=array[counter].Title
     crd_desc.innerText=array[counter].Description
     planetimg.src=array[counter].src
-    crd_ttl.style.color = array[counter].color
+    // crd_ttl.style.color = array[counter].color
 }
 
 crd_btn_lft.onclick = function(){
@@ -62,17 +62,17 @@ crd_btn_lft.onclick = function(){
     if (counter<=0){
         counter = 0
     }
-    crd_ttl.innerText=array[counter].Title
+    // crd_ttl.innerText=array[counter].Title
     crd_desc.innerText=array[counter].Description
     planetimg.src=array[counter].src
-    crd_ttl.style.color = array[counter].color
+    // crd_ttl.style.color = array[counter].color
 }
 
 function loadtxt() {
-    crd_ttl.innerText=array[counter].Title
+    // crd_ttl.innerText=array[counter].Title
     crd_desc.innerText=array[counter].Description
     planetimg.src=array[counter].src
-    crd_ttl.style.color = array[0].color
+    // crd_ttl.style.color = array[0].color
 }
 
 window.onload(loadtxt())
