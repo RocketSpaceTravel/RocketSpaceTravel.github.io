@@ -39,3 +39,11 @@ html {
     width: 50%;
     height: 100%;
   }
+
+  #card_title {
+    color: aliceblue;
+  }
+
+  #Card {
+    background-color: none;
+  }
