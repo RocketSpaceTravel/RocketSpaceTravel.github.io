@@ -23,16 +23,16 @@ html {
   }
 
   body {
-    cursor: url('../../carbon_rocket.png'),auto;
+    cursor: url('../../image/carbon_rocket.png'),auto;
   }
   
 
   button:hover {
-    cursor: url('../../carbon_rocket_click.png'),auto;
+    cursor: url('../../image/carbon_rocket_click.png'),auto;
   }
 
   a:hover{
-    cursor: url('../../carbon_rocket_click.png'),auto;
+    cursor: url('../../image/carbon_rocket_click.png'),auto;
   }
 
   #Images {
@@ -46,4 +46,8 @@ html {
 
   #Card {
     background-color: none;
+  }
+
+  #Card:hover {
+    cursor: url('../../image/carbon_rocket_click.png'),auto;
   }
