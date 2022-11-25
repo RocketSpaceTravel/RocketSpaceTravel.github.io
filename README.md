@@ -13,3 +13,5 @@ Github: https://github.com/tameemsafi/typewriterjs
 Twinkling Stars Background: https://archive.org/details/Stars_2D
 
 Planet Pictures: <a href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
+
+Getter Icons: <a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Freepik - Flaticon</a> and thenounproject.com
