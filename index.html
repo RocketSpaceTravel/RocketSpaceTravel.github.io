@@ -25,7 +25,7 @@
         </div>
     </nav>
     <!-- ______________________________________________________________ -->
-    <header class="text-white pt-28 md:p-24 flex flex-row justify-center md:justify-start">
+    <header class="text-white pt-28 md:p-24 flex flex-row justify-center md:justify-start h-screen">
         <div class="flex flex-col gap-11">
         <div class=" flex flex-col gap-11">
         <h1 class="text-3xl text-center md:text-left font-bold w-96 md:w-[30rem]" id="Header"></h1>
@@ -40,30 +40,36 @@
             <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_qogkaqmb.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
         </div>
     </header>
-
-    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start" id="About" data-aos="fade-down-right">
+    <div>
+    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start w-screen h-screen" id="About" data-aos="fade-down-right">
         <div class="flex flex-col gap-11 order-2 md:order-1">
         <div class="flex flex-col gap-11">
             <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Our Mission</h1>
             <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our mission is to help people know more about space through a fun, education, and memorable experience.</h1>
+            <div class="flex justify-center pt-14"><a href="#Goal"><button class=" btn btn-success">Our goal</button></a></div>
         </div>
         </div>
         <div class=" flex justify-center md:justify-end w-screen order-1 md:order-2">
             <img id="Images" src="./Image/Planet6-removebg-preview.png">
         </div>
     </div>
+    <div class="w-screen h-screen">
     <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start" data-aos="fade-down-left">
         <div class="flex flex-col gap-11 order-2 md:order-2">
         <div class="flex flex-col gap-11 justify-end">
             <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Aiming at success</h1>
             <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our goal is to provide the most comfortable, and educating experience for a reasonable price.</h1>
+            <div class="flex justify-center pt-14"><a href="#AC"><button class=" btn btn-success">Why should you join?</button></a></div>
         </div>
         </div>
-        <div class=" flex justify-center md:justify-start w-screen order-1 md:order-1">
+        <div class=" flex justify-center md:justify-start w-screen order-1 md:order-1" id="Goal">
             <img id="Images" src="./Image/Planet8-removebg-preview.png">
         </div>
     </div>
-    <div class="flex justify-center w-screen pt-10 ">
+    </div>
+    </div>
+
+    <div class="flex justify-center w-screen pt-24 h-screen " id="AC">
     <div class=" grid sm:grid-cols-3 gap-2 grid-cols-1">
             <div class="w-96 h-72 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down"
 			data-aos-easing="linear"
@@ -98,40 +104,26 @@
 			</div>
 			</div>
 
-			<div>
-				<div class=" flex flex-col sm:flex-row justify-center pt-20">
-					<div>
-						<img src="./Image/Planet1-removebg-preview.png" id="Planet_Img">
-					</div>
-					<div class=" gap-12">
-						<div class=" flex flex-col gap-2 text-white">
-							<p class=" text-lg">Select your Plant</p>
-							<div class="flex flex-row gap-6 text-white">
-								<p>||</p>
-							<button class="underline decoration-red-600 underline-offset-2" id="Planet_1">MARS</button>
-							<button class="underline decoration-red-600 underline-offset-2" id="Planet_2">MOON</button>
-							<button class="underline decoration-red-600 underline-offset-2" id="Planet_3">JUPITER</button>
-							</div>
-						</div>
-						<div class="pt-3 text-gray-200 flex flex-col gap-y-2">
-							<p class=" text-lg">Select your Pricing Plan</p>
-							<div class=" flex flex-row gap-6 text-white">
-								<p class="text-white">|||</p>
-								<button class="underline decoration-blue-600 underline-offset-2" id="">ECONOMY</button>
-								<button class="underline decoration-blue-600 underline-offset-2" id="">STANDARD</button>
-								<button class="underline decoration-blue-600 underline-offset-2" id="">FIRST-CLASS</button>
-							</div>
-						<div>
-							<li class="w-96">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure rerum, quisquam, quas consectetur error cumque vitae saepe ab ullam magnam, aspernatur tempore at itaque maxime inventore repellendus asperiores mollitia modi!</li>
-						</div>
-						<div class=" flex flex-row gap-9">
-							<p>DISTANCE:<span id="distance">1000</span></p>
-							<p>PRICE:<span id="price">1000</span></p>
-							<a class="hover:underline hover:decoration-red-600 underline-offset-4 hover:delay-200 transition-all ease-in-out">LEARN MORE</a>
-						</div>
-						</div>
-					</div>
-				</div>
+			<div class="w-screen h-screen flex flex-col">
+                <div>
+                    <p class="text-white text-center text-5xl font-extrabold mt-14" id="Heading">Select your Planet</p>
+                </div>
+                <div class="flex flex-row pt-12 gap-x-40">
+                    <div class=" flex flex-col gap-8">
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Mars</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Venus</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Moon</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Jupiter</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">ISS</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Saturn</button>
+                    </div>
+                    <div class="text-white w-96 text-lg">
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt architecto asperiores deserunt dolor vel minima cupiditate delectus culpa quasi est, dicta autem quam voluptate, optio pariatur, vitae molestiae velit saepe? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate impedit ratione quae perspiciatis excepturi, esse maiores qui aut, omnis, quam quibusdam aliquam in magnam! Labore blanditiis corporis aliquam ex modi!</li>
+                    </div>
+                    <div>
+                        <img src="./Image/Planet4-removebg-preview.png">
+                    </div>
+                </div>
 			</div>
 
     <div class=" text-white text-center text-5xl font-extrabold mt-14">What are you waiting for?</div>
