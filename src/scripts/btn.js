@@ -1,29 +1,32 @@
-let crd_ttl = document.getElementById("card_title")
-let crd_desc = document.getElementById("desc")
-let crd_btn_rght = document.getElementById("Card_right")
-let crd_btn_lft = document.getElementById("Card_left")
-let Card = document.getElementById("Card")
-let planetimg = document.getElementById("Img")
+let Planet_1 = document.getElementById("Planet_1")
+let Planet_2 = document.getElementById("Planet_2")
+let Planet_3 = document.getElementById("Planet_3")
+let Image = document.getElementById("Planet_Img")
+let Distance = document.getElementById("distance")
+let Price = document.getElementById("price")
+
 
 let array = [
     {
         "Title": "Earth",
         "Description": "Go around and adore the magnificent beauty of planet earth.",
-        "src":"./Image/AltPhotos/simon-lee-eGALMCJ_Cvk-unsplash.jpg",
-        "color": "#0e1836"
+        "src":"../Image/Planet3-removebg-preview.png",
+        "color": "#0e1836",
+        "price": "200"
     },
     {
         "Title": "Mars",
         "Description": "Explore Mars. The planet that looks like earth. Also known as the 'Red Planet'.",
-        "src":"./Image/AltPhotos/simon-lee-hrOXaenH640-unsplash.jpg",
-        "color": "#a03f03"
+        "src":"../Image/Planet4-removebg-preview.png",
+        "color": "#a03f03",
+        "price": "300"
     },
     {
         "Title": "Jupiter",
         "Description": "Explore Jupiter. Go around the largest planet in the entire solar system.",
-        "src":"./Image/AltPhotos/simon-lee-_B7LjqNXu5Q-unsplash.jpg",
-        "color": "#452e1a"
-
+        "src":"./Image/Planet1-removebg-preview.png",
+        "color": "#452e1a",
+        "price":"500"
     },
     {
         "Title": "Saturn",
@@ -45,39 +48,17 @@ let array = [
     }
 ]
 
-let counter = 0
+let Basic = 1000
+let Standard = 2000
+let BasicPremium = 5000
 
-crd_btn_rght.onclick = function(){
-    counter += 1
-    if (counter>=array.length){
-        counter = 0
-    }
-    crd_ttl.innerText=array[counter].Title
-    crd_desc.innerText=array[counter].Description
-    planetimg.src=array[counter].src
-    Card.style.backgroundColor = array[counter].color
-    // crd_ttl.style.color = array[counter].color
+Planet_1.onclick = function(){
+    Image.src = array[0].src
+    Price.innerText = Basic + array[0].price
 }
-
-crd_btn_lft.onclick = function(){
-    counter -= 1
-    if (counter<=0){
-        counter = 0
-    }
-    crd_ttl.innerText=array[counter].Title
-    crd_desc.innerText=array[counter].Description
-    planetimg.src=array[counter].src
-    Card.style.backgroundColor = array[counter].color
-    // crd_ttl.style.color = array[counter].color
+Planet_2.onclick = function(){
+    Image.src = array[1].src
 }
-
-function loadtxt() {
-    crd_ttl.innerText=array[counter].Title
-    crd_desc.innerText=array[counter].Description
-    planetimg.src=array[counter].src
-    // crd_ttl.style.color = array[counter].color
-    Card.style.backgroundColor = array[counter].color
+Planet_3.onclick = function(){
+    Image.src = array[2].src
 }
-
-window.onload(loadtxt())
-

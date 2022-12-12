@@ -1,6 +1,13 @@
 html {
     scroll-behavior: smooth;
+    max-width: 1920px;
+    margin: 0 auto;
   }
+
+#Planet_Img {
+  width: 75%;
+  height: 100%;
+}
 
   html::-webkit-scrollbar {
     display: none;
