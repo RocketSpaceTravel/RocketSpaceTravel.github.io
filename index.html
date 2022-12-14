@@ -32,7 +32,7 @@
         <h1 class="text-lg text-center md:text-left font-semibold w-96">From low Earth orbit to the Moon and beyond, RocketSpace provides state-of-the-art spacecraft and <span class=" text-yellow-400">highly trained pilots</span> to ensure a <span class=" text-blue-400">safe and exciting </span>space travel experience for all.</h1>
         </div>
         <div class=" flex gap-x-4 justify-center md:justify-start">
-            <a href="#About"><button class=" w-20 h-10 rounded-lg bg-red-500 text-black font-semibold">About</button></a>
+            <a href="#About"><button class=" w-20 h-10 rounded-lg bg-red-500 text-black font-semibold">About ▼</button></a>
            <a href="#Price"><button class=" w-20 h-10 rounded-lg bg-emerald-600 text-black font-semibold">Pricing</button></a>
         </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="flex flex-col gap-11">
             <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Our Mission</h1>
             <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our mission is to help people know more about space through a fun, education, and memorable experience.</h1>
-            <div class="flex justify-center pt-14"><a href="#Goal"><button class=" btn btn-success">Our goal</button></a></div>
+            <div class="flex justify-center pt-14"><a href="#Goal"><button class=" btn btn-success">Our goal ▼</button></a></div>
         </div>
         </div>
         <div class=" flex justify-center md:justify-end w-screen order-1 md:order-2">
@@ -59,7 +59,7 @@
         <div class="flex flex-col gap-11 justify-end">
             <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Aiming at success</h1>
             <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our goal is to provide the most comfortable, and educating experience for a reasonable price.</h1>
-            <div class="flex justify-center pt-14"><a href="#AC"><button class=" btn btn-success">Why should you join?</button></a></div>
+            <div class="flex justify-center pt-14"><a href="#AC"><button class=" btn btn-success">Why should you join ▼</button></a></div>
         </div>
         </div>
         <div class=" flex justify-center md:justify-start w-screen order-1 md:order-1" id="Goal">
@@ -68,8 +68,7 @@
     </div>
     </div>
     </div>
-
-    <div class="flex justify-center w-screen pt-24 h-screen " id="AC">
+    <div class="grid grid-flow-row justify-center w-screen pt-24 h-screen" id="AC">
     <div class=" grid sm:grid-cols-3 gap-2 grid-cols-1">
             <div class="w-96 h-72 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down"
 			data-aos-easing="linear"
@@ -102,30 +101,35 @@
                 <p class="text-white">Hello World</p>
             </div> -->
 			</div>
+            <div class="flex justify-center pt-14"><a href="#Price"><button class=" btn btn-success">View our pricing ▼</button></a></div>
 			</div>
-
-			<div class="w-screen h-screen flex flex-col">
+			<div class="w-screen h-screen flex flex-col justify-center" id="Price">
                 <div>
                     <p class="text-white text-center text-5xl font-extrabold mt-14" id="Heading">Select your Planet</p>
                 </div>
                 <div class="flex flex-row pt-12 gap-x-40">
-                    <div class=" flex flex-col gap-8">
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Mars</button>
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Venus</button>
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Moon</button>
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Jupiter</button>
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">ISS</button>
-                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300">Saturn</button>
+                    <div class=" flex flex-col gap-8 pl-14">
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_1" onclick="Btn1Clk()">Free Float</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_2" onclick="Btn2Clk()">Earth</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_3" onclick="Btn3Clk()">Moon</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_4" onclick="Btn4Clk()">Mars</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_5" onclick="Btn5Clk()">Jupiter</button>
+                            <button class=" text-center text-white w-24 text-xl font-semibold hover:underline hover:decoration-red-600 transition ease-linear delay-300" id="Btn_6" onclick="Btn6Clk()">Saturn</button>
                     </div>
-                    <div class="text-white w-96 text-lg">
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt architecto asperiores deserunt dolor vel minima cupiditate delectus culpa quasi est, dicta autem quam voluptate, optio pariatur, vitae molestiae velit saepe? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate impedit ratione quae perspiciatis excepturi, esse maiores qui aut, omnis, quam quibusdam aliquam in magnam! Labore blanditiis corporis aliquam ex modi!</li>
+                    <div class="text-white w-96 text-lg flex flex-col">
+                        <li id="Desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt architecto asperiores deserunt dolor vel minima cupiditate delectus culpa quasi est, dicta autem quam voluptate, optio pariatur, vitae molestiae velit saepe? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate impedit ratione quae perspiciatis excepturi, esse maiores qui aut, omnis, quam quibusdam aliquam in magnam! Labore blanditiis corporis aliquam ex modi!</li>
+                        <div class="flex gap-x-5 pt-5">
+                            <button class="btn btn-warning" id="Prev">Back</button>
+                            <button class="btn btn-success" id="Next">Select</button>
+                            <p class="btn text-white">Distance:<span id="distance">0</span></p>
+                            <p class="btn text-white">Price:<span id="price">0</span></p>
+                        </div>
                     </div>
                     <div>
-                        <img src="./Image/Planet4-removebg-preview.png">
+                        <img id="Planet_Img" src="./Image/Planet4-removebg-preview.png">
                     </div>
                 </div>
 			</div>
-
     <div class=" text-white text-center text-5xl font-extrabold mt-14">What are you waiting for?</div>
     <div class="flex justify-center pt-14"><a><button class=" btn btn-success">Get Started</button></a></div>
     <div class=" w-screen h-36"></div>
@@ -133,6 +137,7 @@
         <p class="text-center text-sm text-white">Meer Abdoul Samad © 2022</p>
     </footer>
 </body>
+<script src="./src/scripts/btn.js" defer></script>
 <script type="module" src="./src/scripts/typewriter.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -140,5 +145,5 @@
 <script>
   AOS.init();
 </script>
-<script src="./src/scripts/btn.js"></script>
+
 </html>

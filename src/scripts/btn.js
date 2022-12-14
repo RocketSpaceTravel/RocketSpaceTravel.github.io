@@ -1,6 +1,12 @@
-let Planet_1 = document.getElementById("Planet_1")
-let Planet_2 = document.getElementById("Planet_2")
-let Planet_3 = document.getElementById("Planet_3")
+let Btn_1 = document.getElementById("Btn_1")
+let Btn_2 = document.getElementById("Btn_2")
+let Btn_3 = document.getElementById("Btn_3")
+let Btn_4 = document.getElementById("Btn_4")
+let Btn_5 = document.getElementById("Btn_5")
+let Btn_6 = document.getElementById("Btn_6")
+let Prev = document.getElementById("Prev")
+let Next = document.getElementById("Next")
+let Desc = document.getElementById("Desc")
 let Image = document.getElementById("Planet_Img")
 let Distance = document.getElementById("distance")
 let Price = document.getElementById("price")
@@ -8,57 +14,144 @@ let Price = document.getElementById("price")
 
 let array = [
     {
+        "Title": "Free Float",
+        "Description": "Free floating in space is an incredible experience that is unlike anything else you can do. Imagine weightlessly soaring through the vast expanse of space, taking in the stunning views of the stars, planets, and galaxies around you. With no gravity to hold you down, you'll be able to move and explore in ways that are impossible on Earth. Space tourists will have the opportunity to experience the thrill and excitement of free floating in space, and to see the universe in a whole new way. Book your trip to experience the adventure of a lifetime!",
+        "src":"../Image/Planet3-removebg-preview.png",
+        "color": "#0e1836",
+        "price": "200"
+    },
+    {
         "Title": "Earth",
-        "Description": "Go around and adore the magnificent beauty of planet earth.",
+        "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
+        "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
+        "color": "#b6aa84"
+    },
+    {
+        "Title": "Moon",
+        "Description": "The Moon is Earth's only natural satellite and is the fifth-largest moon in the solar system. It is a rocky, terrestrial body that has a heavily cratered surface and is covered in a layer of fine, powdery soil called regolith. It has no atmosphere and experiences extreme temperature fluctuations, with temperatures on its surface ranging from boiling hot to freezing cold. Despite these challenges, the Moon is an exciting destination for space tourists who want to experience the thrill of being on another world. Book your trip to the Moon today and take part in the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
         "price": "200"
     },
     {
         "Title": "Mars",
-        "Description": "Explore Mars. The planet that looks like earth. Also known as the 'Red Planet'.",
+        "Description": "Mars is an exciting destination for space tourists who want to experience the thrill of being on another planet. Its unique landscape, with its towering volcanoes and deep canyons, is unlike anything you'll see on Earth. The thin atmosphere of Mars makes for beautiful sunrises and sunsets, and you can even see the stars in greater detail than you would on Earth. Plus, with its milder temperatures and lower gravity, Mars is a great place to enjoy outdoor activities like hiking and exploring. Book your trip to Mars today and experience the adventure of a lifetime!",
         "src":"../Image/Planet4-removebg-preview.png",
         "color": "#a03f03",
         "price": "300"
     },
     {
         "Title": "Jupiter",
-        "Description": "Explore Jupiter. Go around the largest planet in the entire solar system.",
+        "Description": "Jupiter is a must-see destination for space tourists who want to explore the outer reaches of the solar system. Its massive size and stunning beauty make it a truly awe-inspiring sight. From its colorful stripes to its iconic red spot, there is always something interesting to see on Jupiter. Plus, with its many moons, you'll have plenty of opportunities to go on exciting excursions and discover new and fascinating worlds. Book your trip to Jupiter today and experience the adventure of a lifetime!",
         "src":"./Image/Planet1-removebg-preview.png",
         "color": "#452e1a",
         "price":"500"
     },
     {
         "Title": "Saturn",
-        "Description": "Explore Saturn, one of the lightest and the planet with the best rings. ",
+        "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84"
     },
-    {
-        "Title": "Uranus",
-        "Description": "Go around Uranus, the third largest planet, and the coldest planet.",
-        "src":"./Image/AltPhotos/simon-lee-A6OTC1-Ok-A-unsplash.jpg",
-        "color": "#99c7c7"
-    },
-    {
-        "Title": "Neptune",
-        "Description": "Explore Neptune, the farthest, and the planet that rains diamonds.",
-        "src":"./Image/AltPhotos/simon-lee-MzZ4WW3IT_U-unsplash.jpg",
-        "color": "#201dac"
-    }
+]
+
+let Plans = [
+    "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
+    "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $100,000.","The premium plan would offer a truly luxurious space travel experience, with a larger and more advanced rocket, extended stays in orbit, and access to exclusive facilities and services. This plan might include private cabins, gourmet meals, and personalized training and support from experienced astronauts. The price for this plan could be upwards of $500,000.",
 ]
 
 let Basic = 1000
 let Standard = 2000
-let BasicPremium = 5000
+let Premium = 5000
+let Pg = 1
 
-Planet_1.onclick = function(){
-    Image.src = array[0].src
-    Price.innerText = Basic + array[0].price
+
+function Btn1Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[0].Description
+        Distance = 10000
+    }
+    if (Pg == 2) {
+        Desc.innerText = Plans[0]
+        // Distance = 10000
+    }
 }
-Planet_2.onclick = function(){
-    Image.src = array[1].src
+function Btn2Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[1].Description
+        Distance = 10000
+
+    }
+    if (Pg == 2) {
+        Desc.innerText = Plans[1]
+    }
+}function Btn3Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[2].Description
+        Distance = 10000
+    }
+    if (Pg == 2) {
+        Desc.innerText = Plans[2]
+    }
+}function Btn4Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[3].Description
+        Distance = 10000
+    }
+}function Btn5Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[4].Description
+        Distance = 10000
+    }
+}function Btn6Clk() {
+    if (Pg == 1) {
+        Desc.innerText = array[5].Description
+        Distance = 10000
+    }
 }
-Planet_3.onclick = function(){
-    Image.src = array[2].src
+
+window.onload = function() {
+    if (Pg==1) {
+        Btn_1.innerText = "Free Float"
+        Btn_2.innerText = "Earth"
+        Btn_3.innerText = "Moon"
+        Btn_4.innerText = "Mars"
+        Btn_5.innerText = "Jupiter"
+        Btn_6.innerText = "Saturn" 
+    } if(Pg==2) {
+        Btn_1.innerText = "Standard"
+        Btn_2.innerText = "Economy"
+        Btn_3.innerText = "Premium"
+        Btn_4.innerText = " "
+        Btn_5.innerText = " "
+        Btn_6.innerText = " "
+    }
+}
+function Updte() {
+    if (Pg==1) {
+        Btn_1.innerText = "Free Float"
+        Btn_2.innerText = "Earth"
+        Btn_3.innerText = "Moon"
+        Btn_4.innerText = "Mars"
+        Btn_5.innerText = "Jupiter"
+        Btn_6.innerText = "Saturn" 
+    } if(Pg==2) {
+        Btn_1.innerText = "Standard"
+        Btn_2.innerText = "Economy"
+        Btn_3.innerText = "Premium"
+        Btn_4.innerText = " "
+        Btn_5.innerText = " "
+        Btn_6.innerText = " "
+    }
+}
+
+
+Next.onclick = function() {
+    Pg += 1
+    Updte()
+}
+
+Prev.onclick = function() {
+    Pg -= 1
+    Updte()
 }
