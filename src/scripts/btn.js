@@ -24,7 +24,8 @@ let array = [
         "Title": "Earth",
         "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
-        "color": "#b6aa84"
+        "color": "#b6aa84",
+        "price": "1500"
     },
     {
         "Title": "Moon",
@@ -51,35 +52,63 @@ let array = [
         "Title": "Saturn",
         "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
-        "color": "#b6aa84"
+        "color": "#b6aa84",
+        "price":"500"
     },
 ]
 
 let Plans = [
-    "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
-    "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $100,000.","The premium plan would offer a truly luxurious space travel experience, with a larger and more advanced rocket, extended stays in orbit, and access to exclusive facilities and services. This plan might include private cabins, gourmet meals, and personalized training and support from experienced astronauts. The price for this plan could be upwards of $500,000.",
+    // "",
+    // "","The premium plan would offer a truly luxurious space travel experience, with a larger and more advanced rocket, extended stays in orbit, and access to exclusive facilities and services. This plan might include private cabins, gourmet meals, and personalized training and support from experienced astronauts. The price for this plan could be upwards of $500,000.",
+    {
+        "Title": "Basic",
+        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
+        "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
+        "color": "#b6aa84",
+        "price":"2000"
+    },
+    {
+        "Title": "Standard",
+        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $100,000.",
+        "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
+        "color": "#b6aa84",
+        "price":"5000"
+    },
+    {
+        "Title": "Premium",
+        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
+        "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
+        "color": "#b6aa84",
+        "price":"15000"
+    },
 ]
 
 let Basic = 1000
 let Standard = 2000
 let Premium = 5000
 let Pg = 1
+let Curr_Plnt = array[0]
+let Curr_Pln = 1000
 
 
 function Btn1Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[0]
         Desc.innerText = array[0].Description
-        Distance = 10000
+        Distance.innerText = "10000"
+        Price.innerText = Curr_Plnt.price
     }
     if (Pg == 2) {
         Desc.innerText = Plans[0]
-        // Distance = 10000
+        // Price.innerText = Curr_Plnt.price += Curr_Pln
     }
 }
 function Btn2Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[1]
         Desc.innerText = array[1].Description
         Distance = 10000
+        Price.innerText = Curr_Plnt.price
 
     }
     if (Pg == 2) {
@@ -87,26 +116,34 @@ function Btn2Clk() {
     }
 }function Btn3Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[2]
         Desc.innerText = array[2].Description
         Distance = 10000
+        Price.innerText = Curr_Plnt.price    
     }
     if (Pg == 2) {
         Desc.innerText = Plans[2]
     }
 }function Btn4Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[3]
         Desc.innerText = array[3].Description
         Distance = 10000
+        Price.innerText = Curr_Plnt.price    
     }
 }function Btn5Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[4]
         Desc.innerText = array[4].Description
         Distance = 10000
+        Price.innerText = Curr_Plnt.price    
     }
 }function Btn6Clk() {
     if (Pg == 1) {
+        Curr_Plnt = array[5]
         Desc.innerText = array[5].Description
         Distance = 10000
+        Price.innerText = Curr_Plnt.price    
     }
 }
 
@@ -142,16 +179,24 @@ function Updte() {
         Btn_4.innerText = " "
         Btn_5.innerText = " "
         Btn_6.innerText = " "
+    } if(Pg==3) {
+        Btn_1.innerText = "Plant: " + Curr_Plnt.Title
+        Btn_2.innerText = "Pricing Plan: "
+        Btn_3.innerText = "Premium"
+        Btn_4.innerText = " "
+        Btn_5.innerText = " "
+        Btn_6.innerText = " "
     }
 }
 
-
 Next.onclick = function() {
+    Price.innerText = Curr_Plnt.price
     Pg += 1
     Updte()
 }
 
 Prev.onclick = function() {
+    Price.innerText = Curr_Plnt.price
     Pg -= 1
     Updte()
 }
