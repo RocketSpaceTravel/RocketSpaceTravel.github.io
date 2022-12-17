@@ -5,6 +5,7 @@ let Btn_4 = document.getElementById("Btn_4")
 let Btn_5 = document.getElementById("Btn_5")
 let Btn_6 = document.getElementById("Btn_6")
 let Prev = document.getElementById("Prev")
+let Heading = document.getElementById("Heading")
 let Next = document.getElementById("Next")
 let Desc = document.getElementById("Desc")
 let Image = document.getElementById("Planet_Img")
@@ -83,12 +84,10 @@ let Plans = [
     },
 ]
 
-let Basic = 1000
-let Standard = 2000
-let Premium = 5000
 let Pg = 1
 let Curr_Plnt = array[0]
-let Curr_Pln = 1000
+let Curr_Pln = Plans[0]
+let TotalPrice = Curr_Pln.price + Curr_Plnt.price
 
 
 function Btn1Clk() {
@@ -99,8 +98,8 @@ function Btn1Clk() {
         Price.innerText = Curr_Plnt.price
     }
     if (Pg == 2) {
-        Desc.innerText = Plans[0]
-        // Price.innerText = Curr_Plnt.price += Curr_Pln
+        Curr_Pln = Plans[0]
+        Desc.innerText = Plans[0].Description
     }
 }
 function Btn2Clk() {
@@ -112,7 +111,8 @@ function Btn2Clk() {
 
     }
     if (Pg == 2) {
-        Desc.innerText = Plans[1]
+        Curr_Pln = Plans[1]
+        Desc.innerText = Plans[1].Description
     }
 }function Btn3Clk() {
     if (Pg == 1) {
@@ -122,7 +122,10 @@ function Btn2Clk() {
         Price.innerText = Curr_Plnt.price    
     }
     if (Pg == 2) {
-        Desc.innerText = Plans[2]
+        Curr_Pln = Plans[2]
+        // Desc.innerText = Plans[2]
+        Desc.innerText = Plans[2].Description
+
     }
 }function Btn4Clk() {
     if (Pg == 1) {
@@ -172,6 +175,8 @@ function Updte() {
         Btn_4.innerText = "Mars"
         Btn_5.innerText = "Jupiter"
         Btn_6.innerText = "Saturn" 
+        Heading.innerText = "Select your destination"
+        Desc.innerText = Curr_Plnt.Description
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -179,13 +184,26 @@ function Updte() {
         Btn_4.innerText = " "
         Btn_5.innerText = " "
         Btn_6.innerText = " "
+        Heading.innerText = "Select your pricing plan"
+        Desc.innerText = Curr_Pln.Description
     } if(Pg==3) {
-        Btn_1.innerText = "Plant: " + Curr_Plnt.Title
-        Btn_2.innerText = "Pricing Plan: "
-        Btn_3.innerText = "Premium"
+        Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
+        Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
+        Btn_3.innerText = " "
         Btn_4.innerText = " "
         Btn_5.innerText = " "
         Btn_6.innerText = " "
+        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is " + TotalPrice + ". Do you want to continue?" 
+        Heading.innerText = "Check your information"
+    } if(Pg==4) {
+        Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
+        Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
+        Btn_3.innerText = " "
+        Btn_4.innerText = " "
+        Btn_5.innerText = " "
+        Btn_6.innerText = " "
+        Desc.innerText = Desc.innerText = "Booked! Thank you for choosing RocketSpace! 🚀" 
+        Heading.innerText = "Success! ✌️"
     }
 }
 
@@ -196,6 +214,9 @@ Next.onclick = function() {
 }
 
 Prev.onclick = function() {
+    if( Pg< 1){
+        Pg = 1
+    }
     Price.innerText = Curr_Plnt.price
     Pg -= 1
     Updte()
