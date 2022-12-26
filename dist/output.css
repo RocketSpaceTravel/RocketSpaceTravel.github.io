@@ -2352,6 +2352,10 @@ html {
        column-gap: 1.25rem;
 }
 
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
