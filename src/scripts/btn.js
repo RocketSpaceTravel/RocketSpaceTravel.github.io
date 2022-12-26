@@ -158,13 +158,14 @@ window.onload = function() {
         Btn_4.innerText = "Mars"
         Btn_5.innerText = "Jupiter"
         Btn_6.innerText = "Saturn" 
+        Desc.innerText = Curr_Plnt.Description
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
         Btn_3.innerText = "Premium"
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_4.innerText = "--"
+        Btn_5.innerText = "--"
+        Btn_6.innerText = "--"
     }
 }
 function Updte() {
@@ -181,27 +182,27 @@ function Updte() {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
         Btn_3.innerText = "Premium"
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_4.innerText = "--"
+        Btn_5.innerText = "--"
+        Btn_6.innerText = "--"
         Heading.innerText = "Select your pricing plan"
         Desc.innerText = Curr_Pln.Description
     } if(Pg==3) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
-        Btn_3.innerText = " "
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_3.innerText = "--"
+        Btn_4.innerText = "--"
+        Btn_5.innerText = "--"
+        Btn_6.innerText = "--"
         Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is " + TotalPrice + ". Do you want to continue?" 
         Heading.innerText = "Check your information"
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
-        Btn_3.innerText = " "
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_3.innerText = "--"
+        Btn_4.innerText = "--"
+        Btn_5.innerText = "--"
+        Btn_6.innerText = "--"
         Desc.innerText = Desc.innerText = "Booked! Thank you for choosing RocketSpace! 🚀" 
         Heading.innerText = "Success! ✌️"
     }
