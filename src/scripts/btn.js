@@ -15,7 +15,7 @@ let Price = document.getElementById("price")
 
 let array = [
     {
-        "Title": "Free Float",
+        "Title": "Gliding",
         "Description": "Free floating in space is an incredible experience that is unlike anything else you can do. Imagine weightlessly soaring through the vast expanse of space, taking in the stunning views of the stars, planets, and galaxies around you. With no gravity to hold you down, you'll be able to move and explore in ways that are impossible on Earth. Space tourists will have the opportunity to experience the thrill and excitement of free floating in space, and to see the universe in a whole new way. Book your trip to experience the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
@@ -152,7 +152,7 @@ function Btn2Clk() {
 
 window.onload = function() {
     if (Pg==1) {
-        Btn_1.innerText = "Free Float"
+        Btn_1.innerText = "Gliding"
         Btn_2.innerText = "Earth"
         Btn_3.innerText = "Moon"
         Btn_4.innerText = "Mars"
@@ -170,7 +170,7 @@ window.onload = function() {
 }
 function Updte() {
     if (Pg==1) {
-        Btn_1.innerText = "Free Float"
+        Btn_1.innerText = "Gliding"
         Btn_2.innerText = "Earth"
         Btn_3.innerText = "Moon"
         Btn_4.innerText = "Mars"
