@@ -15,7 +15,7 @@ let Price = document.getElementById("price")
 
 let array = [
     {
-        "Title": "Gliding",
+        "Title": "Sightseeing",
         "Description": "Free floating in space is an incredible experience that is unlike anything else you can do. Imagine weightlessly soaring through the vast expanse of space, taking in the stunning views of the stars, planets, and galaxies around you. With no gravity to hold you down, you'll be able to move and explore in ways that are impossible on Earth. Space tourists will have the opportunity to experience the thrill and excitement of free floating in space, and to see the universe in a whole new way. Book your trip to experience the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
@@ -94,7 +94,7 @@ function Btn1Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[0]
         Desc.innerText = array[0].Description
-        Distance.innerText = "10000"
+        Distance.innerText = "256,600 km"
         Price.innerText = Curr_Plnt.price
     }
     if (Pg == 2) {
@@ -106,7 +106,8 @@ function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[1]
         Desc.innerText = array[1].Description
-        Distance = 10000
+        // Distance = 10000
+        Distance.innerText = "256,600 km"
         Price.innerText = Curr_Plnt.price
 
     }
@@ -118,7 +119,7 @@ function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[2]
         Desc.innerText = array[2].Description
-        Distance = 10000
+        Distance.innerText = "384,400 km"
         Price.innerText = Curr_Plnt.price    
     }
     if (Pg == 2) {
@@ -131,7 +132,7 @@ function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[3]
         Desc.innerText = array[3].Description
-        Distance = 10000
+        Distance.innerText = "97.821 million km"
         Price.innerText = Curr_Plnt.price    
     }
 }function Btn5Clk() {
@@ -152,7 +153,7 @@ function Btn2Clk() {
 
 window.onload = function() {
     if (Pg==1) {
-        Btn_1.innerText = "Gliding"
+        Btn_1.innerText = "SightSeeing"
         Btn_2.innerText = "Earth"
         Btn_3.innerText = "Moon"
         Btn_4.innerText = "Mars"
@@ -170,7 +171,7 @@ window.onload = function() {
 }
 function Updte() {
     if (Pg==1) {
-        Btn_1.innerText = "Gliding"
+        Btn_1.innerText = "SightSeeing"
         Btn_2.innerText = "Earth"
         Btn_3.innerText = "Moon"
         Btn_4.innerText = "Mars"
