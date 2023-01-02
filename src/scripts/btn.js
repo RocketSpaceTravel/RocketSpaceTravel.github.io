@@ -87,7 +87,7 @@ let Plans = [
 let Pg = 1
 let Curr_Plnt = array[0]
 let Curr_Pln = Plans[0]
-let TotalPrice = Curr_Pln.price + Curr_Plnt.price
+// let TotalPrice = Curr_Pln.price + Curr_Plnt.price
 
 
 function Btn1Clk() {
