@@ -158,7 +158,7 @@ window.onload = function() {
         Btn_4.innerText = "Mars"
         Btn_5.innerText = "Jupiter"
         Btn_6.innerText = "Saturn" 
-        Desc.innerText = Curr_Plnt.Description
+        Desc.innerText = "Click on the text to select your destination then click the select button."
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
