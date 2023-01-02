@@ -19,7 +19,7 @@ let Pre = [
     },
     {
         "Title" : "Launch",
-        "Desc" : "The launch of a spacecraft is a complex and highly coordinated process, and at our space travel company, we have the expertise and resources to ensure a smooth and successful launch. From countdown to liftoff, our team works to ensure that all systems are functioning properly and that the spacecraft is ready for the journey ahead."
+        "Desc" : "The launch of a spacecraft is a complex and highly coordinated process, and at our space travel company, we have the expertise and resources to ensure a smooth and successful launch. From countdown to liftoff, our team works to ensure that all systems are functioning properly and that the spacecraft is ready for the journey ahead. The space ship is selected by our team which is based off of the time of the year, pricing plan that you chose, and the number you people you have with you."
     },
     {
         "Title" : "Recovery",
