@@ -11,7 +11,7 @@ let Pre = [
     },
     {
         "Title" : "Vehicles",
-        "Desc" : "We operate a fleet of state-of-the-art spacecraft designed to safely transport people to and from space. Our vehicles are equipped with advanced technology to ensure a smooth and comfortable journey, and are regularly maintained to the highest standards to ensure the safety of our customers."
+        "Desc" : "We operate a fleet of state-of-the-art spacecraft designed to safely transport people to and from space. Our vehicles are equipped with advanced technology to ensure a smooth and comfortable journey, and are regularly maintained to the highest standards to ensure the safety of our customers. The rocket's feature may vary depending on the price plan you select. However, all the safety, launch, etc will remain the same throughout the space ships no matter the pricing plan. "
     },
     {
         "Title" : "Safety",

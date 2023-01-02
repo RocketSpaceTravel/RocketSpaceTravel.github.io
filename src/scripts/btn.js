@@ -19,42 +19,42 @@ let array = [
         "Description": "Free floating in space is an incredible experience that is unlike anything else you can do. Imagine weightlessly soaring through the vast expanse of space, taking in the stunning views of the stars, planets, and galaxies around you. With no gravity to hold you down, you'll be able to move and explore in ways that are impossible on Earth. Space tourists will have the opportunity to experience the thrill and excitement of free floating in space, and to see the universe in a whole new way. Book your trip to experience the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
-        "price": "200"
+        "price": 50000
     },
     {
         "Title": "Earth",
         "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price": "1500"
+        "price": 1500
     },
     {
         "Title": "Moon",
         "Description": "The Moon is Earth's only natural satellite and is the fifth-largest moon in the solar system. It is a rocky, terrestrial body that has a heavily cratered surface and is covered in a layer of fine, powdery soil called regolith. It has no atmosphere and experiences extreme temperature fluctuations, with temperatures on its surface ranging from boiling hot to freezing cold. Despite these challenges, the Moon is an exciting destination for space tourists who want to experience the thrill of being on another world. Book your trip to the Moon today and take part in the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
-        "price": "200"
+        "price": 200
     },
     {
         "Title": "Mars",
         "Description": "Mars is an exciting destination for space tourists who want to experience the thrill of being on another planet. Its unique landscape, with its towering volcanoes and deep canyons, is unlike anything you'll see on Earth. The thin atmosphere of Mars makes for beautiful sunrises and sunsets, and you can even see the stars in greater detail than you would on Earth. Plus, with its milder temperatures and lower gravity, Mars is a great place to enjoy outdoor activities like hiking and exploring. Book your trip to Mars today and experience the adventure of a lifetime!",
         "src":"../Image/Planet4-removebg-preview.png",
         "color": "#a03f03",
-        "price": "300"
+        "price": 300
     },
     {
         "Title": "Jupiter",
         "Description": "Jupiter is a must-see destination for space tourists who want to explore the outer reaches of the solar system. Its massive size and stunning beauty make it a truly awe-inspiring sight. From its colorful stripes to its iconic red spot, there is always something interesting to see on Jupiter. Plus, with its many moons, you'll have plenty of opportunities to go on exciting excursions and discover new and fascinating worlds. Book your trip to Jupiter today and experience the adventure of a lifetime!",
         "src":"./Image/Planet1-removebg-preview.png",
         "color": "#452e1a",
-        "price":"500"
+        "price":500
     },
     {
         "Title": "Saturn",
         "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":"500"
+        "price":500
     },
 ]
 
@@ -66,21 +66,21 @@ let Plans = [
         "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":"2000"
+        "price":50000
     },
     {
         "Title": "Standard",
-        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $100,000.",
+        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":"5000"
+        "price":105000
     },
     {
         "Title": "Premium",
-        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $50,000.",
+        "Description": "This plan will have access to our top-of-the-line spacecraft, equipped with the latest technology and comfortable amenities. You will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. Additionally, you will be able to bring along a guest of your choice on your journey, and you will both receive VIP treatment at all of our space stations and landing sites. The price for this plan might be around $805,000.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":"15000"
+        "price": 805000
     },
 ]
 
@@ -100,6 +100,7 @@ function Btn1Clk() {
     if (Pg == 2) {
         Curr_Pln = Plans[0]
         Desc.innerText = Plans[0].Description
+        Price.innerText = Curr_Pln.price
     }
 }
 function Btn2Clk() {
@@ -114,6 +115,7 @@ function Btn2Clk() {
     if (Pg == 2) {
         Curr_Pln = Plans[1]
         Desc.innerText = Plans[1].Description
+        Price.innerText = Curr_Pln.price
     }
 }function Btn3Clk() {
     if (Pg == 1) {
@@ -126,7 +128,7 @@ function Btn2Clk() {
         Curr_Pln = Plans[2]
         // Desc.innerText = Plans[2]
         Desc.innerText = Plans[2].Description
-
+        Price.innerText = Curr_Pln.price
     }
 }function Btn4Clk() {
     if (Pg == 1) {
@@ -195,8 +197,9 @@ function Updte() {
         Btn_4.innerText = " "
         Btn_5.innerText = " "
         Btn_6.innerText = " "
-        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is " + TotalPrice + ". Do you want to continue?" 
+        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Curr_Pln.price + Curr_Plnt.price) + ". Do you want to continue?" 
         Heading.innerText = "Check your information"
+        Price.innerText = Curr_Pln.price + Curr_Plnt.price
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
