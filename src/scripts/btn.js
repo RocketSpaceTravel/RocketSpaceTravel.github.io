@@ -19,42 +19,42 @@ let array = [
         "Description": "Free floating in space is an incredible experience that is unlike anything else you can do. Imagine weightlessly soaring through the vast expanse of space, taking in the stunning views of the stars, planets, and galaxies around you. With no gravity to hold you down, you'll be able to move and explore in ways that are impossible on Earth. Space tourists will have the opportunity to experience the thrill and excitement of free floating in space, and to see the universe in a whole new way. Book your trip to experience the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
-        "price": 50000
+        "price": 50000000
     },
     {
         "Title": "Earth",
         "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price": 45060
+        "price": 100000000
     },
     {
         "Title": "Moon",
         "Description": "The Moon is Earth's only natural satellite and is the fifth-largest moon in the solar system. It is a rocky, terrestrial body that has a heavily cratered surface and is covered in a layer of fine, powdery soil called regolith. It has no atmosphere and experiences extreme temperature fluctuations, with temperatures on its surface ranging from boiling hot to freezing cold. Despite these challenges, the Moon is an exciting destination for space tourists who want to experience the thrill of being on another world. Book your trip to the Moon today and take part in the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
-        "price": 115040
+        "price": 556000000
     },
     {
         "Title": "Mars",
         "Description": "Mars is an exciting destination for space tourists who want to experience the thrill of being on another planet. Its unique landscape, with its towering volcanoes and deep canyons, is unlike anything you'll see on Earth. The thin atmosphere of Mars makes for beautiful sunrises and sunsets, and you can even see the stars in greater detail than you would on Earth. Plus, with its milder temperatures and lower gravity, Mars is a great place to enjoy outdoor activities like hiking and exploring. Book your trip to Mars today and experience the adventure of a lifetime!",
         "src":"../Image/Planet4-removebg-preview.png",
         "color": "#a03f03",
-        "price": 450690
+        "price": 828800000
     },
     {
         "Title": "Jupiter",
         "Description": "Jupiter is a must-see destination for space tourists who want to explore the outer reaches of the solar system. Its massive size and stunning beauty make it a truly awe-inspiring sight. From its colorful stripes to its iconic red spot, there is always something interesting to see on Jupiter. Plus, with its many moons, you'll have plenty of opportunities to go on exciting excursions and discover new and fascinating worlds. Book your trip to Jupiter today and experience the adventure of a lifetime!",
         "src":"./Image/Planet1-removebg-preview.png",
         "color": "#452e1a",
-        "price":677035
+        "price":4700000000
     },
     {
         "Title": "Saturn",
         "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":1206000
+        "price":3900000000
     },
 ]
 
@@ -161,7 +161,8 @@ window.onload = function() {
         Btn_4.innerText = "Mars"
         Btn_5.innerText = "Jupiter"
         Btn_6.innerText = "Saturn" 
-        Desc.innerText = "Click on the text to select your destination then click the select button."
+        Desc.innerText = "Click on the text to select your destination then click the continue button."
+        Prev.style.display = "none"
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -171,6 +172,42 @@ window.onload = function() {
         Btn_6.innerText = " "
     }
 }
+
+const abbrNum = (number, decPlaces) => {
+    // 2 decimal places => 100, 3 => 1000, etc
+    decPlaces = Math.pow(10, decPlaces)
+  
+    // Enumerate number abbreviations
+    var abbrev = ['k', 'm', 'b', 't']
+  
+    // Go through the array backwards, so we do the largest first
+    for (var i = abbrev.length - 1; i >= 0; i--) {
+      // Convert array index to "1000", "1000000", etc
+      var size = Math.pow(10, (i + 1) * 3)
+  
+      // If the number is bigger or equal do the abbreviation
+      if (size <= number) {
+        // Here, we multiply by decPlaces, round, and then divide by decPlaces.
+        // This gives us nice rounding to a particular decimal place.
+        number = Math.round((number * decPlaces) / size) / decPlaces
+  
+        // Handle special case where we round up to the next abbreviation
+        if (number == 1000 && i < abbrev.length - 1) {
+          number = 1
+          i++
+        }
+  
+        // Add the letter for the abbreviation
+        number += abbrev[i]
+  
+        // We are done... stop
+        break
+      }
+    }
+  
+    return number
+  }
+
 function Updte() {
     if (Pg==1) {
         Btn_1.innerText = "SightSeeing"
@@ -181,6 +218,7 @@ function Updte() {
         Btn_6.innerText = "Saturn" 
         Heading.innerText = "Select your destination"
         Desc.innerText = Curr_Plnt.Description
+        Prev.style.display = "none"
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -190,6 +228,8 @@ function Updte() {
         Btn_6.innerText = " "
         Heading.innerText = "Select your pricing plan"
         Desc.innerText = Curr_Pln.Description
+        Price.innerText = "0"
+        Prev.style.display = "block"
     } if(Pg==3) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -197,9 +237,12 @@ function Updte() {
         Btn_4.innerText = " "
         Btn_5.innerText = " "
         Btn_6.innerText = " "
+        let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Curr_Pln.price + Curr_Plnt.price) + ". Do you want to continue?" 
         Heading.innerText = "Check your information"
-        Price.innerText = Curr_Pln.price + Curr_Plnt.price
+        let abb = abbrNum(TotalAmt,2)
+        Price.innerText = abb
+        Next.style.display = "block"
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -209,6 +252,10 @@ function Updte() {
         Btn_6.innerText = " "
         Desc.innerText = Desc.innerText = "Booked! Thank you for choosing RocketSpace! 🚀" 
         Heading.innerText = "Success! ✌️"
+        Next.style.display = "none"
+        let TotalAmt = Curr_Pln.price + Curr_Plnt.price
+        let abb = abbrNum(TotalAmt,2)
+        Price.innerText = abb
     }
 }
 
