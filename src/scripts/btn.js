@@ -26,35 +26,35 @@ let array = [
         "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price": 1500
+        "price": 45060
     },
     {
         "Title": "Moon",
         "Description": "The Moon is Earth's only natural satellite and is the fifth-largest moon in the solar system. It is a rocky, terrestrial body that has a heavily cratered surface and is covered in a layer of fine, powdery soil called regolith. It has no atmosphere and experiences extreme temperature fluctuations, with temperatures on its surface ranging from boiling hot to freezing cold. Despite these challenges, the Moon is an exciting destination for space tourists who want to experience the thrill of being on another world. Book your trip to the Moon today and take part in the adventure of a lifetime!",
         "src":"../Image/Planet3-removebg-preview.png",
         "color": "#0e1836",
-        "price": 200
+        "price": 115040
     },
     {
         "Title": "Mars",
         "Description": "Mars is an exciting destination for space tourists who want to experience the thrill of being on another planet. Its unique landscape, with its towering volcanoes and deep canyons, is unlike anything you'll see on Earth. The thin atmosphere of Mars makes for beautiful sunrises and sunsets, and you can even see the stars in greater detail than you would on Earth. Plus, with its milder temperatures and lower gravity, Mars is a great place to enjoy outdoor activities like hiking and exploring. Book your trip to Mars today and experience the adventure of a lifetime!",
         "src":"../Image/Planet4-removebg-preview.png",
         "color": "#a03f03",
-        "price": 300
+        "price": 450690
     },
     {
         "Title": "Jupiter",
         "Description": "Jupiter is a must-see destination for space tourists who want to explore the outer reaches of the solar system. Its massive size and stunning beauty make it a truly awe-inspiring sight. From its colorful stripes to its iconic red spot, there is always something interesting to see on Jupiter. Plus, with its many moons, you'll have plenty of opportunities to go on exciting excursions and discover new and fascinating worlds. Book your trip to Jupiter today and experience the adventure of a lifetime!",
         "src":"./Image/Planet1-removebg-preview.png",
         "color": "#452e1a",
-        "price":500
+        "price":677035
     },
     {
         "Title": "Saturn",
         "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":500
+        "price":1206000
     },
 ]
 
