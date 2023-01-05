@@ -7,7 +7,7 @@ let Pre = [
     },
     {
         "Title" : "Training",
-        "Desc" : 'Before embarking on their space journey, all of our customers undergo rigorous training to prepare them for the physical and mental challenges of space travel. Our training program covers everything from zero-gravity simulations to emergency procedures, giving our customers the skills and confidence they need to succeed in space. However, if you have either of these conditions, you are unable to go into space. \n -High blood pressure \n -Heart Problems \n -Respiratory Problems \n -Not passed High School'
+        "Desc" : 'Before embarking on their space journey, all of our customers undergo rigorous training to prepare them for the physical and mental challenges of space travel. Our training program covers everything from zero-gravity simulations to emergency procedures, giving our customers the skills and confidence they need to succeed in space. If you chose the Premium plan, you will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. However, if you have either of these conditions, you are unable to go into space. \n -High blood pressure \n -Heart Problems \n -Respiratory Problems \n -Not passed High School'
     },
     {
         "Title" : "Vehicles",
