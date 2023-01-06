@@ -95,12 +95,14 @@ function Btn1Clk() {
         Curr_Plnt = array[0]
         Desc.innerText = array[0].Description
         Distance.innerText = "256,600 km"
-        Price.innerText = Curr_Plnt.price
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber
     }
     if (Pg == 2) {
         Curr_Pln = Plans[0]
         Desc.innerText = Plans[0].Description
-        Price.innerText = Curr_Pln.price
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber
     }
 }
 function Btn2Clk() {
@@ -109,47 +111,54 @@ function Btn2Clk() {
         Desc.innerText = array[1].Description
         // Distance = 10000
         Distance.innerText = "256,600 km"
-        Price.innerText = Curr_Plnt.price
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber
 
     }
     if (Pg == 2) {
         Curr_Pln = Plans[1]
         Desc.innerText = Plans[1].Description
-        Price.innerText = Curr_Pln.price
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber
     }
 }function Btn3Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[2]
         Desc.innerText = array[2].Description
         Distance.innerText = "384,400 km"
-        Price.innerText = Curr_Plnt.price    
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber    
     }
     if (Pg == 2) {
         Curr_Pln = Plans[2]
         // Desc.innerText = Plans[2]
         Desc.innerText = Plans[2].Description
-        Price.innerText = Curr_Pln.price
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber
     }
 }function Btn4Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[3]
         Desc.innerText = array[3].Description
         Distance.innerText = "97.821 million km"
-        Price.innerText = Curr_Plnt.price    
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber    
     }
 }function Btn5Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[4]
         Desc.innerText = array[4].Description
         Distance = 10000
-        Price.innerText = Curr_Plnt.price    
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber    
     }
 }function Btn6Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[5]
         Desc.innerText = array[5].Description
         Distance = 10000
-        Price.innerText = Curr_Plnt.price    
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerText = "$"+formattedNumber    
     }
 }
 
@@ -238,10 +247,11 @@ function Updte() {
         Btn_5.innerText = " "
         Btn_6.innerText = " "
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
-        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Curr_Pln.price + Curr_Plnt.price) + ". Do you want to continue?" 
+        const Ttlprc2 = TotalAmt.toLocaleString("en-US");
+        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Ttlprc2) + ". Do you want to continue?" 
         Heading.innerText = "Check your information"
         let abb = abbrNum(TotalAmt,2)
-        Price.innerText = abb
+        Price.innerText = "$"+ abb
         Next.style.display = "block"
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
