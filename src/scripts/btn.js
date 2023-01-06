@@ -110,7 +110,7 @@ function Btn2Clk() {
         Curr_Plnt = array[1]
         Desc.innerText = array[1].Description
         // Distance = 10000
-        Distance.innerText = "256,600 km"
+        Distance.innerText = "267,568 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
         Price.innerText = "$"+formattedNumber
 
@@ -148,7 +148,7 @@ function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[4]
         Desc.innerText = array[4].Description
-        Distance = 10000
+        Distance.innerText = "778 million km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
         Price.innerText = "$"+formattedNumber    
     }
@@ -156,7 +156,7 @@ function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[5]
         Desc.innerText = array[5].Description
-        Distance = 10000
+        Distance.innerText = "1.5839 billion km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
         Price.innerText = "$"+formattedNumber    
     }
