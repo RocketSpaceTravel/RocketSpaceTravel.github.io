@@ -3,7 +3,7 @@
 let Pre = [
     {
         "Title" : "Planning",
-        "Desc" : "At our space travel company, we have a team of experienced professionals who carefully plan every aspect of the space travel experience. From choosing the ideal launch window to selecting the most efficient spacecraft for the journey, our planning process is thorough and detailed to ensure a safe and successful trip to space."
+        "Desc" : "At our space travel company, we have a team of experienced professionals who carefully plan every aspect of the space travel experience. From choosing the ideal launch window to selecting the most efficient spacecraft for the journey, our planning process is thorough and detailed to ensure a safe and successful trip to space. The planning process is based off of the pricing plan you chose, the number of people you have with you, and the time of the year. Our team will contact you to discuss the details of your space travel experience. Furthermore, our team pre-plans the space ship that you will be traveling to make sure that you have the best experience possible."
     },
     {
         "Title" : "Training",
@@ -11,7 +11,7 @@ let Pre = [
     },
     {
         "Title" : "Vehicles",
-        "Desc" : "We operate a fleet of state-of-the-art spacecraft designed to safely transport people to and from space. Our vehicles are equipped with advanced technology to ensure a smooth and comfortable journey, and are regularly maintained to the highest standards to ensure the safety of our customers. The rocket's feature may vary depending on the price plan you select. However, all the safety, launch, etc will remain the same throughout the space ships no matter the pricing plan. "
+        "Desc" : "We operate a fleet of state-of-the-art spacecraft designed to safely transport people to and from space. Our vehicles are equipped with advanced technology to ensure a smooth and comfortable journey, and are regularly maintained to the highest standards to ensure the safety of our customers. The rocket's feature may vary depending on the price plan you select. However, all the safety, launch, etc will remain the same throughout the space ships no matter the pricing plan. The space ship is selected by our team which is based off of the time of the year, pricing plan that you chose, and the number you people you have with you may also affect the type of space ship you are traveling in."
     },
     {
         "Title" : "Safety",
