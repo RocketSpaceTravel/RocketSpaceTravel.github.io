@@ -16,13 +16,33 @@
         <!-- <source src="./image/Stars.mp4"> -->
     </video>
     <!-- Nav  -->
-    <nav class=" w-screen h-12 bg-gray-600 bg-opacity-30 sticky text-white flex gap-x-16 md:gap-x-36 text-lg pt-2 justify-center 4xl:h-20 4xl:text-3xl 4xl:pt-5">
-        <a href="./index.html">RocketSpace</a>
-        <div class=" flex text-right gap-x-8">
-            <a href="./about.html">About</a>
-            <a>Documentation</a>
+    <nav class=" fixed w-screen z-50">
+        <div class="navbar bg-base-300 text-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 text-white rounded-box w-52">
+                  <li><a>Know Before You Go</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl" href="./index.html">RocketSpace</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="./knowBeforeYouGo.html">Know Before You Go</a></li>
+                <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-success" href="./pricing.html">Get started</a>
+            </div>
         </div>
-    </nav>
+        </nav>
     <div class=" pt-20 flex flex-col justify-center w-screen">
         <p class=" text-white text-4xl font-bold text-center">Documentation</p>
         <div class="flex flex-col text-white text-center mt-6 gap-4">
