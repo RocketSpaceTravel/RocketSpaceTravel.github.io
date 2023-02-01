@@ -1,0 +1,64 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Stars from './components/video/Stars.mp4';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="text-white bg-black">
+		<video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src={Stars}>
+			<!-- <source src="./image/Stars.mp4"> -->
+		</video>
+		<div class="navbar bg-slate-900">
+			<div class="navbar-start">
+			  <div class="dropdown">
+				<label tabindex="0" class="btn btn-ghost lg:hidden">
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+				</label>
+				<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-900 rounded-box w-52">
+				  <li><a>About</a></li>
+				  <li><a>Documentation</a></li>
+				  <li><a>Know Before You Go</a></li>
+				</ul>
+			  </div>
+			  <a class="btn btn-ghost normal-case text-xl">RocketSpace</a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+			  <ul class="menu menu-horizontal px-1">
+				<li><a>About</a></li>
+				<li><a>Documentation</a></li>
+				<li><a>Know Before You Go</a></li>
+			  </ul>
+			</div>
+			<div class="navbar-end">
+			  <a class="btn btn-success">Get started</a>
+			</div>
+		</div>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #000000;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

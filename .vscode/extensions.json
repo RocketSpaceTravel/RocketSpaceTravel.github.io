@@ -1,5 +1,4 @@
 {
-    "recommendations": [
-        "astro-build.houston"
-    ]
+  "recommendations": ["astro-build.astro-vscode"],
+  "unwantedRecommendations": []
 }

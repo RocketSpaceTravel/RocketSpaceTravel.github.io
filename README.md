@@ -1,26 +1,54 @@
-# RocketryDummy
+# Astro Starter Kit: Basics
+
+```
+npm create astro@latest -- --template basics
+```
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
 
-Citation:
+## 🚀 Project Structure
 
-AOS (Animate On Scroll) Library:  https://michalsnik.github.io/aos/ 
+Inside of your Astro project, you'll see the following folders and files:
 
-Github: https://github.com/michalsnik/aos 
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-Icons: https://iconify.design/ 
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Typewriter Library:  https://safi.me.uk/typewriterjs/ 
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Github: https://github.com/tameemsafi/typewriterjs 
+Any static assets, like images, can be placed in the `public/` directory.
 
-Twinkling Stars Background: https://archive.org/details/Stars_2D
+## 🧞 Commands
 
-Planet Pictures: <a href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
+All commands are run from the root of the project, from a terminal:
 
-Animated Cards Icons: <a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Freepik - Flaticon</a> and <a href="thenounproject.com">Thenounproject</a>
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
 
-Basic Information: <a href="https://firsthand.co/professions/astronauts/requirements">Basic Info on space requirements </a>
+## 👀 Want to learn more?
 
-Animated icons : <a href="https://lottiefiles.com/">Lottie Animations </a>
-- <a href="https://lottiefiles.com/miladghiravani">Spinning Globe </a>
-- <a href="https://www.freepik.com/author/catalyststuff">Astronaut on Rocket </a>
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
