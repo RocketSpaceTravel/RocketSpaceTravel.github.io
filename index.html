@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketSpace</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src="./Image/Stars.mp4">
+        <!-- <source src="./image/Stars.mp4"> -->
+    </video>
+    <!-- Nav  -->
+    <nav class=" fixed w-screen z-50">
+        <div class="navbar bg-base-300 text-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 text-white rounded-box w-52">
+                  <li><a>Know Before You Go</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl" href="./index.html">RocketSpace</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="./knowBeforeYouGo.html">Know Before You Go</a></li>
+                <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-success" href="./pricing.html">Get started</a>
+            </div>
+        </div>
+        </nav>
+    <!-- ______________________________________________________________ -->
+    <header class="text-white pt-28 md:p-24 flex flex-row justify-center md:justify-start h-screen">
+        <div class="flex flex-col gap-11">
+        <div class=" flex flex-col gap-11">
+        <h1 class="text-3xl text-center md:text-left font-bold w-96 md:w-[30rem]" id="Header"></h1>
+        <h1 class="text-lg text-center md:text-left font-semibold w-96">From low Earth orbit to the Moon and beyond, RocketSpace provides state-of-the-art spacecraft and <span class=" text-yellow-400">highly trained pilots</span> to ensure a <span class=" text-blue-400">safe and exciting </span>space travel experience for all. <br> Made by <span class="text-purple-500">#2043-901</span></h1>
+        </div>
+        <div class=" flex gap-x-4 justify-center md:justify-start">
+            <a href="#About"><button class=" w-20 h-10 rounded-lg bg-red-500 text-black font-semibold">About ▼</button></a>
+           <a href="./pricing.html"><button class=" w-20 h-10 rounded-lg bg-emerald-600 text-black font-semibold">Pricing</button></a>
+        </div>
+        </div>
+        <div class=" w-0 md:w-screen flex justify-end">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_qogkaqmb.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
+        </div>
+    </header>
+    <div>
+    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start w-screen h-screen" id="About" data-aos="fade-down-right">
+        <div class="flex flex-col gap-11 order-2 md:order-1">
+        <div class="flex flex-col gap-11">
+            <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Our Mission</h1>
+            <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our mission is to help people know more about space through a fun, educational, and memorable experience.</h1>
+            <div class="flex justify-center pt-14"><a href="#Goal"><button class=" btn btn-success">Our goal ▼</button></a></div>
+        </div>
+        </div>
+        <div class=" flex justify-center md:justify-end w-screen order-1 md:order-2">
+            <!--  -->
+            <!-- <img id="Images" src="./Image/Planet6-removebg-preview.png">
+             -->
+             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_PF7Jq8VA8O.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
+        </div>
+    </div>
+    <div class="w-screen h-screen">
+    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start" data-aos="fade-down-left">
+        <div class="flex flex-col gap-11 order-2 md:order-2">
+        <div class="flex flex-col gap-11 justify-end">
+            <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Aiming at success</h1>
+            <h1 class="text-xl text-center md:text-left font-semibold w-screen md:w-96">Our goal is to provide the most comfortable, and educating experience for a reasonable price.</h1>
+            <div class="flex justify-center pt-14"><a href="#AC"><button class=" btn btn-success">Why should you join ▼</button></a></div>
+        </div>
+        </div>
+        <div class=" flex justify-center md:justify-start w-screen order-1 md:order-1" id="Goal">
+            <!--  -->
+            <!-- <img id="Images" src="./Image/Planet8-removebg-preview.png"> -->
+            <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_of1c2696.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="flex flex-col">
+    <div class="grid grid-flow-row justify-center w-screen pt-24 h-screen " id="AC">
+        <p class="text-3xl text-center font-bold text-white">Why should you join?</p>
+    <div class=" grid sm:grid-cols-3 gap-2 grid-cols-1">
+            <div class="w-96 h-72 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down"
+			data-aos-easing="linear"
+			data-aos-duration="300">
+                <img src="./Image/Getter_Imges/noun-space-1753130.svg" style="height: 55%; width: 55%;">
+                <p class="text-white z-50">Once in a lifetime opportunity.</p>
+            </div>
+            <div class="w-96 h-72 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down"
+			data-aos-easing="linear"
+			data-aos-duration="600">
+                <img src="./Image/Getter_Imges/noun-space-2248258.svg" style="height: 45%; width: 45%;">
+                <p class="text-white">Grow your curiosity on space. </p>
+            </div>            
+            <div class="w-96 h-72 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down"
+			data-aos-easing="linear"
+			data-aos-duration="900">
+                <img src="./Image/Getter_Imges/noun-constellation-5329387.svg" style="height: 45%; width: 45%;">
+                <p class="text-white text-center">Increase your knowledge with interesting facts on planets and space. </p>
+            </div>            
+			</div>
+            <div class="flex justify-center pt-14"><a href="./knowBeforeYouGo.html"><button class=" btn btn-success">View our planning⫸</button></a></div>
+			</div>
+        </div>
+             <!-- The Before you Know components was here before getting moved over to its own septate page (Note to self) -->
+            <div id="QuoteBlock" class="flex flex-row justify-center h-screen pt-32" data-aos="fade-up">
+                <p class="text-gray-200 text-center text-3xl w-[90%] font-extrabold mt-14">Human space exploration helps to <span class="text-green-600">address fundamental questions </span>about our place in the Universe and the history of our solar system. Through addressing the challenges related to human space exploration we expand technology, create new industries, and help to <span class=" text-red-600">foster a peaceful connection</span> with other nations. <br> <br> -<a href="https://www.nasa.gov/exploration/whyweexplore/why_we_explore_main.html#:~:text=Human%20space%20exploration%20helps%20to,peaceful%20connection%20with%20other%20nations." class="text-blue-500 hover:underline">NASA.gov</a></p>
+            </div>
+    <div class="flex justify-center flex-col mt-10">
+    <div class=" text-white text-center text-5xl font-extrabold mt-14">What are you waiting for?</div>
+    <div class="flex justify-center pt-14"><a href="./pricing.html"><button class=" btn btn-success">Book your trip</button></a></div>
+
+    <div class=" w-screen h-36"></div>
+
+</div>
+    <footer>
+        <p class="text-center text-sm text-white">#2043-901 © 2022 - 2023</p>
+    </footer>
+</body>
+<script src="./src/scripts/btn.js" defer></script>
+<script type="module" src="./src/scripts/typewriter.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="./src/scripts/BeforeYouKnow.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

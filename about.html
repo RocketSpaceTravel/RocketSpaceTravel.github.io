@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketSpace</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src="./Image/Stars.mp4">
+        <!-- <source src="./image/Stars.mp4"> -->
+    </video>
+    <!-- Nav  -->
+    <nav class=" fixed w-screen z-50">
+        <div class="navbar bg-base-300 text-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 text-white rounded-box w-52">
+                  <li><a>Know Before You Go</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl" href="./index.html">RocketSpace</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="./knowBeforeYouGo.html">Know Before You Go</a></li>
+                <li><a href="./about.html">About</a></li>
+                  <li><a href="./Documentation.html">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-success" href="./pricing.html">Get started</a>
+            </div>
+        </div>
+        </nav>
+    <div class=" m-20">
+        <p class=" text-white text-4xl font-bold">About</p>
+    <p class=" text-white text-xl pt-5">RocketSpace is a premier space travel company, offering a wide range of options for both seasoned space explorers and first-time travelers. Our state-of-the-art spacecraft are equipped with the latest technology, ensuring a safe and comfortable journey for all of our passengers. <br>
+        <br>
+        Our highly trained team of astronauts and support staff are dedicated to making your space travel experience as enjoyable as possible. We offer personalized itineraries, allowing you to choose your own destination and activities during your trip.<br>
+        <br>
+        In addition to our standard space travel packages, we also offer a premium "Cosmic Explorer" package, which includes access to exclusive training and VIP treatment at all of our space stations and landing sites.<br>
+        <br>
+        At RocketSpace, we prioritize the safety of our passengers and crew. All of our spacecraft are thoroughly inspected and tested before every journey, and our team is trained to handle any potential emergencies.<br>
+        <br>
+        Whether you're looking to take a trip to the moon, go on a tour of the solar system, or visit distant exoplanets, RocketSpace has a space travel option for you. So why wait? Book your journey with us today and experience the wonders of the cosmos like never before <br><br>-2043-901 <br> -CEO and Founder</p>
+    </div>
+
+</body>
+<script type="module" src="./src/scripts/typewriter.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="./src/scripts/btn.js"></script>
+</html>
